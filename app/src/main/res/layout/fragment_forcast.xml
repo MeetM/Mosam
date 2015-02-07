@@ -1,0 +1,282 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="co.meetm.mosam.ForecastFragment"
+    android:orientation="vertical"
+
+    android:id="@+id/forecast_container">
+
+    <TextView
+        android:layout_marginBottom="16dp"
+        android:text="forecast"
+        android:textSize="30sp"
+        android:layout_gravity="left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView
+            android:padding="10dp"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:layout_weight="3"
+            android:text=""
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:textSize="25sp"
+                android:text="lo"
+                style="@style/ForecastTemp"
+                android:textAlignment="center"
+                android:layout_width="@dimen/forecast_width"
+
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:padding="10dp"
+                android:layout_weight="1"
+                android:textSize="25sp"
+                android:text="hi"
+                style="@style/ForecastTemp"
+                android:textAlignment="center"
+                android:layout_width="@dimen/forecast_width"
+
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/date0"
+            style="@style/dayofweek"
+            android:text="mon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/temp_low0"
+                style="@style/ForecastTemp"
+                android:text="29"
+                android:layout_width="@dimen/forecast_width"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:padding="10dp"
+                android:id="@+id/temp_high0"
+                style="@style/ForecastTemp"
+                android:text="35"
+                android:layout_width="@dimen/forecast_width"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/date1"
+            style="@style/dayofweek"
+            android:text="tue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/temp_low1"
+                style="@style/ForecastTemp"
+                android:text="32"
+                android:textAlignment="center"
+                android:layout_width="@dimen/forecast_width"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:padding="10dp"
+                android:id="@+id/temp_high1"
+                style="@style/ForecastTemp"
+                android:textAlignment="center"
+                android:text="39"
+                android:layout_width="@dimen/forecast_width"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/date2"
+            style="@style/dayofweek"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/temp_low2"
+                style="@style/ForecastTemp"
+                android:text=""
+                android:textAlignment="center"
+                android:layout_width="@dimen/forecast_width"
+
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:padding="10dp"
+                android:id="@+id/temp_high2"
+                style="@style/ForecastTemp"
+                android:text=""
+                android:textAlignment="center"
+                android:layout_width="@dimen/forecast_width"
+
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/date3"
+            style="@style/dayofweek"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/temp_low3"
+                style="@style/ForecastTemp"
+                android:text=""
+                android:textAlignment="center"
+                android:layout_width="@dimen/forecast_width"
+
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:padding="10dp"
+                android:id="@+id/temp_high3"
+                style="@style/ForecastTemp"
+                android:text=""
+                android:textAlignment="center"
+                android:layout_width="@dimen/forecast_width"
+
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/date4"
+            style="@style/dayofweek"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/temp_low4"
+                style="@style/ForecastTemp"
+                android:text=""
+                android:textAlignment="center"
+                android:layout_width="@dimen/forecast_width"
+
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:padding="10dp"
+                android:id="@+id/temp_high4"
+                style="@style/ForecastTemp"
+                android:text=""
+                android:textAlignment="center"
+                android:layout_width="@dimen/forecast_width"
+
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/date6"
+            style="@style/dayofweek"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/temp_low6"
+                style="@style/ForecastTemp"
+                android:text=""
+                android:textAlignment="center"
+                android:layout_width="@dimen/forecast_width"
+
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:padding="10dp"
+                android:id="@+id/temp_high6"
+                style="@style/ForecastTemp"
+                android:text=""
+                android:textAlignment="center"
+                android:layout_width="@dimen/forecast_width"
+
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/date5"
+            style="@style/dayofweek"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/temp_low5"
+                style="@style/ForecastTemp"
+                android:text=""
+                android:textAlignment="center"
+                android:layout_width="@dimen/forecast_width"
+
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:padding="10dp"
+                android:id="@+id/temp_high5"
+                style="@style/ForecastTemp"
+                android:text=""
+                android:textAlignment="center"
+                android:layout_width="@dimen/forecast_width"
+
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
